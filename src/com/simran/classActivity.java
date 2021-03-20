@@ -14,12 +14,13 @@ public class classActivity
             //use inner for loop to compare
             for (int j =0; j<words.length;j++)
             {
-                if(words[i] == words[j])
+                if(words[i].equals(words[j])) //checking if strings are equal
                 {
-                    wordCounts=wordCounts+1;
-
+                    wordCounts=wordCounts+1; //increase the value if the words are equal
+                    words[j]="0";            //do not use the repeated words.
                 }
             }
+            System.out.println(words[i]);
         }
     }
 }
