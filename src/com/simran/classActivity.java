@@ -1,13 +1,11 @@
 package com.simran;
 
-import java.util.Locale;
-
 public class classActivity
 {
     public static void main(String[] args)
     {
         String str = "hello hello how are you HELLO are there happy test you";
-        str = str.toLowerCase();
+        str = str.toLowerCase(); //covert to lowercase
         String[] words = str.split(" ");  //use the split
         int wordCounts=1;    //Variable for getting Repeated word count
 
@@ -22,8 +20,8 @@ public class classActivity
                 }
             }
             if(!words[i].equals("0"))
-                System.out.println(words[i]+" -> "+wordCounts);
-            wordCounts=1;
+                System.out.println(words[i]+" -> "+wordCounts); // print the output
+            wordCounts=1;                                       //setting the count again
 
         }
     }
